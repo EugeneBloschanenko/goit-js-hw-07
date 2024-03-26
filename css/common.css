@@ -28,3 +28,8 @@ body {
   border-radius: 10px;
   box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
 }
+
+.boxStyle {
+  border-radius: 10px;
+  box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+}

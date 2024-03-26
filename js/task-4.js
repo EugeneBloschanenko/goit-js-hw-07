@@ -11,9 +11,22 @@
 
 
 const form = document.querySelector('.login-form');
+
 form.addEventListener('submit', handleSubmit);
 
 function handleSubmit (e) {
 e.preventDefault();
-console.log(e.currentTarget.elements.email.value);
+
+const elements = e.currentTarget.elements;
+
+const userLogInfo = {
+    email: elements.email.value.trim(),
+    password: elements.password.value.trim(),  
+};
+
+if (userLogInfo.email && userLogInfo.password) {
+    console.log(userLogInfo);
+} else {alert('All form fields must be filled in')};
+
+e.currentTarget.reset();
 };
